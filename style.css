@@ -211,11 +211,15 @@ div > p, section > p {
 /*Projects*/
 
 .projects div {
-    width: 900px;
+  
     margin: 0 auto;
     padding: 2rem;
     animation: fadeIn 1.2s ease-in;
    
+}
+.projects h2{
+    text-align: center;
+    
 }
 
 .projects h3 {
@@ -580,5 +584,6 @@ div > p, section > p {
     }
 
 }
+
 
 
