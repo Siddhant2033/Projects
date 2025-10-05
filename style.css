@@ -211,7 +211,7 @@ div > p, section > p {
 /*Projects*/
 
 .projects {
-    max-width: 900px;
+    width: 900px;
     margin: 0 auto;
     padding: 2rem;
     animation: fadeIn 1.2s ease-in;
@@ -580,3 +580,4 @@ div > p, section > p {
     }
 
 }
+
