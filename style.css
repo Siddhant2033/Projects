@@ -210,7 +210,7 @@ div > p, section > p {
 
 /*Projects*/
 
-.projects {
+.projects div {
     width: 900px;
     margin: 0 auto;
     padding: 2rem;
@@ -580,4 +580,5 @@ div > p, section > p {
     }
 
 }
+
 
