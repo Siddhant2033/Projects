@@ -218,6 +218,7 @@ div > p, section > p {
    
 }
 .project  h2 {
+    margin-left: 200px;
     text-align: center;
     font-size: 2.5rem;
     color: #01254a;
@@ -226,6 +227,12 @@ div > p, section > p {
 }
 
 .projects h3 {
+    color: #2e3944;
+    font-size: 2rem;
+    margin: 2rem 0 1rem;
+    text-align: center;
+}
+.projects h2 {
     color: #2e3944;
     font-size: 2rem;
     margin: 2rem 0 1rem;
@@ -587,6 +594,7 @@ div > p, section > p {
     }
 
 }
+
 
 
 
