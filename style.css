@@ -1,0 +1,551 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #f7f8f9;
+    background: linear-gradient(135deg, #ababab 0%, #42587c 100%);
+    overflow-x: hidden;
+}
+
+/* Navigation */
+nav {
+    background: rgba(0, 0, 0, 0.95);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    animation: slideDown 0.8s ease-out;
+    box-shadow: 0 2px 10px rgba(164, 121, 121, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+    background: rgba(52, 152, 219, 0.1);
+    transform: translateY(-2px);
+}
+
+/* First section */
+div > h3:first-child {
+    text-align: center;
+    color: #eff7ff;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    animation: fadeIn 3s ease-in;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    color: #0f2438;
+    margin: 2rem 0;
+    animation: fadeInUp 2.5s ease-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body > div > img {
+    display: block;
+    margin: 2rem auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 30%;
+    object-fit: cover;
+    border: 5px solid #070853;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeInScale 2.5s ease-out;
+}
+
+body > div > p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #565656;
+    margin: 1.5rem 0;
+    animation: fadeIn 1.8s ease-in;
+}
+
+/* Buttons */
+.b1, .b2 {
+    display: inline-block;
+    padding: 0.9rem 2rem;
+    margin: 1rem 0.5rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 1.5s ease;
+    animation: fadeInUp 3s ease-out;
+}
+
+body > div:first-of-type {
+    text-align: center;
+}
+
+.b1 {
+    background: linear-gradient(135deg, #1e3494 0%, #000000 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.b1:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.b2 {
+    background: linear-gradient(135deg, #000000 0%, #3422a9 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(52, 50, 137, 0.4);
+}
+
+.b2:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(27, 74, 151, 0.6);
+}
+
+/* Dividers (horizontal lines) */
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #1e2274, transparent);
+    margin: 3rem auto;
+    width: 80%;
+}
+
+/* Section Styling */
+div > h2, section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #01254a;
+    margin: 3rem 0 1rem;
+    animation: fadeIn 1s ease-in;
+}
+
+div > p, section > p {
+    text-align: center;
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* About Section */
+.about, .love, .mission, .approach {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgb(0, 0, 0);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    animation: slideInLeft 2s ease-out;
+    transition: transform 1.2s ease;
+}
+
+.about:hover, .love:hover, .mission:hover, .approach:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.about h4, .love h4, .mission h4, .approach h4 {
+    color: #3498db;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.about p, .love p, .mission p, .approach p {
+    text-align: left;
+    line-height: 1.8;
+    color: #f0eaea;
+}
+
+/* Skills Section */
+.skills {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    animation: fadeIn 1.2s ease-in;
+   
+}
+
+.skills h3 {
+    color: #2e3944;
+    font-size: 2rem;
+    margin: 2rem 0 1rem;
+    text-align: center;
+}
+
+.skills p {
+    background: rgb(0, 0, 0);
+    padding: 1rem;
+    margin: 0.8rem auto;
+    max-width: 600px;
+    border-left: 4px solid #3498db;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    animation: slideInRight 0.8s ease-out;
+    color: aliceblue;
+}
+
+/* Core Strengths */
+.strengths {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+.strengths p{
+    color: aliceblue;
+}
+.strengths h3 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.strengths div[class^="cs"] {
+    background: rgb(7, 6, 6);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    animation: fadeInUp 1s ease-out;
+}
+
+.strengths div[class^="cs"]:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.strengths h4 {
+    color: #3498db;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+/* Experience Section */
+.experience, .Certifications {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 2rem;
+   
+}
+
+.Certifications {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+    color: aliceblue;
+}
+
+.accenture, .deloitte, .tata, .scaler, .captain {
+    background: linear-gradient(135deg, #0d046f 0%, #020304 100%);
+    padding: 2rem;
+   
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeInScale 1.2s ease-out;
+    transition: transform 0.3s ease;
+  
+}
+
+.accenture:hover, .deloitte:hover, .tata:hover, .scaler:hover, .captain:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    color: aliceblue;
+}
+
+
+.Certifications h3 {
+   
+   color: #2980b9;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.Certifications h4 {
+    color: #3498db;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.Certifications h5 {
+    color: #eac57f;
+    margin: 1rem 0 0.5rem;
+    font-weight: 600;
+}
+
+.Certifications ul {
+    list-style-position: inside;
+    color: #ffffff;
+    line-height: 1.8;
+}
+
+.Certifications li {
+    margin: 0.3rem 0;
+}
+
+/* Looking Forward & Perspective */
+.looking, .perspective {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background:linear-gradient(135deg, #bbbbbb 0%, #77bfe4 100%);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.looking h3 {
+    color: #3498db;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.perspective p {
+    font-style: italic;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Connect Section */
+.connect {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    text-align: center;
+   color: whitesmoke;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.Email, .linkedin {
+    background: linear-gradient(135deg, #0d046f 0%, #020304 100%);
+    padding: 1.5rem;
+    margin: 1.5rem auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.9s ease;
+}
+
+.Email:hover, .linkedin:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.Email a, .linkedin a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.Email a:hover, .linkedin a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Virtual Coffee Section */
+.virtualcoffee {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: linear-gradient(135deg, #939393 0%, #61acd1 100%);
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(180, 180, 180, 0.3);
+    animation: fadeInScale 1.5s ease-out;
+}
+
+.virtualcoffee h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.virtualcoffee button {
+    padding: 0.9rem 2rem;
+    margin: 1rem 0.5rem;
+    border: 2px solid white;
+    border-radius: 30px;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.virtualcoffee button:hover {
+    background: white;
+    color: #272a47;
+    transform: translateY(-3px);
+}
+
+/* Last Quote */
+.lastquote {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin: 3rem 0;
+    animation: fadeIn 2s ease-in;
+}
+
+/* Footer */
+.lastone {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(8, 8, 8, 0.7);
+    margin: 2rem auto;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.footer {
+    background: #000000;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.footer a {
+    color: #3498db;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #5dade2;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .strengths {
+        grid-template-columns: 1fr;
+    }
+    
+    .Certifications {
+        grid-template-columns: 1fr;
+    }
+    
+    .b1, .b2 {
+        display: block;
+        width: 80%;
+        margin: 1rem auto;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    body > div > img {
+        width: 180px;
+        height: 180px;
+    }
+}
