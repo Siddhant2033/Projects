@@ -208,6 +208,36 @@ div > p, section > p {
     color: aliceblue;
 }
 
+/*Projects*/
+
+.projects {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    animation: fadeIn 1.2s ease-in;
+   
+}
+
+.projects h3 {
+    color: #2e3944;
+    font-size: 2rem;
+    margin: 2rem 0 1rem;
+    text-align: center;
+}
+
+.projects p {
+    background: rgb(0, 0, 0);
+    padding: 1rem;
+    margin: 0.8rem auto;
+    max-width: 600px;
+    border-left: 4px solid #3498db;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    animation: slideInRight 0.8s ease-out;
+    color: aliceblue;
+}
+
+
 /* Core Strengths */
 .strengths {
     display: grid;
@@ -548,4 +578,5 @@ div > p, section > p {
         width: 180px;
         height: 180px;
     }
+
 }
